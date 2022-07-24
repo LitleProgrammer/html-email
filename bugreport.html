@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bugreport | LPMC</title>
+    <script src="https://kit.fontawesome.com/63966cb17d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://www.dafontfree.net/embed/bWluZWNyYWZ0LWJvbGQmZGF0YS85My9tLzE2NzcyMy9NaW5lY3JhZnQtQm9sZC5vdGY" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <section class="top">
+
+      <!---<video autoplay muted loop id="myVideo">
+        <source src="images/clouds.mp4" type="video/mp4">
+      </video>--->
+      <div class="ct">
+    <div class="nav">
+      <div class="nav-big">
+        <div class="nav-content">
+          <div class="nav-img">
+            <img src="images/lpmcLogo.v1.png" alt="" class="logo">
+          </div>
+        <div class="nav-items">
+          <div class="nav-item">
+            <a href="index.html">HOME</a>
+          </div>
+          <div class="nav-item">
+            <a href="#0">GAMEMODES</a>
+          </div>
+          <div class="nav-item">
+            <a href="#0">NEWS</a>
+          </div>
+          <div class="nav-item">
+            <a href="https://lpmc.tebex.io">SHOP</a>
+          </div>
+        </div>
+        <div class="nav-bars">
+          <button class="dropbutton"><i class="fa-solid fa-bars fa-3x"></i></button>
+          <div class="dropdown-content">
+            <a href="#0">BUGREPORT</a>
+            <a href="#0">TEAM</a>
+            <a href="#0">STATUS</a>
+            <a href="#0">SIGNUP</a>
+            <a href="#0">LOGIN</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="nav-small">
+        <div class="nav-img">
+          <img src="images/lpmcLogo.png" alt="" class="logo">
+        </div>
+        <div class="nav-bars">
+          <button class="dropbutton"><i class="fa-solid fa-bars fa-3x"></i></button>
+          <div class="dropdown-content">
+            <a href="#0">HOME</a>
+            <a href="#0">GAMEMODES</a>
+            <a href="#0">NEWS</a>
+            <a href="https://lpmc.tebex.io">SHOP</a>
+            <a href="#0">TEAM</a>
+            <a href="#0">BUGREPORT</a>
+            <a href="#0">STATUS</a>
+            <a href="#0">SIGNUP</a>
+            <a href="#0">LOGIN</a>
+          </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="welcome">
+        <h2>Bugreport</h2><br>
+        <a href="#bugreport"><i class="fa-solid fa-arrow-down fa-bounce fa-3x"></i></a>
+        <!---<button id="myBtn" onclick="myFunction()"><i class="fa-solid fa-play"></i></button>--->
+      </div>
+    </div>
+    </section>
+    <mark id="bugreport"></mark>
+    <section class="bugreport">
+            <!-- BUG: <?php
+            if(isset($_POST["submit"])){
+              mail("linus.glimm06@gmail.com", "Bug-Report JeromeArts.net", 'MC-Name: '.$_POST["name"].'   Server: '.$_POST["server"].'   Beschreibung: '.$_POST["beschreibung"].'  Datum: '.$_POST["datum"].'  Fehler: '.$_POST["fehler"].);
+            }
+            ?> -->
+            <form action="https://formsubmit.co/linus.glimm06@gmail.com" method="POST">
+            <h1><i class="fas fa-bug fa-1x"></i> Bug-Report</h1><br>
+            <p>*Bitte fülle die mit einem Sternchen makierten Pflichtfelder aus, damit wir deinen Bug-Report möglichst schnell bearbeiten können.</p><br>
+            <h3><b>Minecraft Name*</b></h3><br>
+            <input type="text" name="name" placeholder="Minecraft Name" tabindex="1" required> <br>
+            <h3><b>Wo ist der Fehler aufgetreten?*</b></h3><br>
+            <select class="server" name="server" required>
+              <optgroup label="Minecraft">
+                <option>Lobby</option>
+                <option>Private Server</option>
+              </optgroup>
+              <optgroup label="Website">
+                <option>Home</option>
+                <option>Forum</option>
+                <option>Status</option>
+              </optgroup>
+            </select><br>
+            <h3><b>Beschreibe den Fehler möglichst genau.*</b></h3><p>(Wann passiert der fehler? Was passiert dabei?)</p><br>
+            <textarea name="beschreibung" placeholder="" rows="8" cols="80" tabindex="3" required></textarea> <br>
+            <h3><b>Wann ist der Fehler das erste mal aufgetreten?*</b></h3><p>(z.B.: 29.10.2006)</p><br>
+            <input type="date" name="datum" placeholder="DD.MM.YYYY" tabindex="2" required> <br>
+            <h3><b>Fehlermeldungen</b></h3><p>(wenn vorhanden)</p><br>
+            <textarea name="fehler" placeholder="" rows="8" cols="80" tabindex="3"></textarea> <br><br>
+            <button type="submit" name="submit" tabindex="4">Absenden</button> <br><br>
+          </form>
+        </section>
+        <mark id="footer"></mark>
+        <section class="footer">
+          <!--- Footer content here --->
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-instagram fa-3x"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-3x"></i></a>
+            <a href="#"><i class="fa-brands fa-discord fa-3x"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube fa-3x"></i></a>
+            <a href="#"><i class="fa-brands fa-twitch fa-3x"></i></a>
+          </div>
+          <div class="bottom">
+            <a href="impressum.html">Impressum </a>
+            <a href="datenschutz.html">&bull; Datenschutz</a>
+          </div>
+          <div class="copyright">
+            <p>&copy; Linus Glimm</p>
+          </div>
+        </section>
+  </body>
+</html>
